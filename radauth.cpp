@@ -2,12 +2,6 @@
     Projekt: ISA
     Autor:   xkonar07
 
-    TODO:   zpracovani signalu - delete mysocket
-            valgrind test
-            case-insensitive ? nazev souboru ? heslo ? iface ?
-            add/ delete printf & comments
-
-
 */
 
 #include "radauth.h"
