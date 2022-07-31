@@ -1,2 +1,2 @@
 # ios-project-1
-IOS (Operating systems) - projest 1
+University BUT FIT - IOS (Operating systems) - projest 1
