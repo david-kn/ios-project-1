@@ -1,0 +1,18 @@
+Autor: 	David Koňař (xkonar07@stud.fit.vutbr.cz)
+Projekt:	ISA - Jednoduchý autentizačný server
+Datum:  	17.11.2012
+
+O programu:
+	Program je autentizační RADIUS server, který byl vytvořen na základě specifikace RFC2865 (Remote Authentication Dial In User Service). Přijímá požadavky "Access-request" (na předem určeným rozhraních a portu) a na základě(ne)správnosti požadavku server odpoví "Access-accept", "Access-denied" anebo daný paket zahodí. Více informací o programu, jeho funkčnosti a implementaci je popsáno v dokumentaci.
+	
+Příklad spuštění:
+	./radauth -c <soubor>	- spuštění servery; <soubor> obsahuje konfiguraci serveru. Povinný parametr
+	./radauth -h		- pro vypsání nápovědy
+	
+Seznam souborů:	
+	Makefile
+	Manual.pdf
+	radauth.cpp
+	radauth.h
+	Readme
+	
