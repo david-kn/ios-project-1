@@ -1,6 +1,6 @@
 /*
-    Projekt: ISA
-    Autor:   xkonar07
+    Project:	ISA
+    Author:		xkonar07
 */
 
 #include <stdio.h>
@@ -47,7 +47,9 @@ enum errors {
     E_SOCK,         // problem creatin socket
     E_BIND,          // problem to bind socket
     E_SHORT,     // packet is too short
-    E_INT
+    E_INT,		   	// we could find all interfaces defined in config file
+    E_NONBLOCK,		// could set flag to NONBLOCKING
+    E_IOCTL			// problem
 };
 
 const char *EMSG[] = {
@@ -63,7 +65,9 @@ const char *EMSG[] = {
     "Nelze otevrit socket",                             // E_SOCK
     "Chyba bindovani",                                  // E_BIND;
     "Packet is too short",                              // E_SHORT
-    "Spatne rozhrani v konfig souboru",                 // E_INT
+    "Rozhrani zadane v konfiguracnim souboru neexistuje",  // E_INT
+    "Nepodarilo se nastavit priznak na neblokujici",	// E_NONBLOCK
+    "Problem pri ioctl()",					// E_IOCTL
 };
 
 typedef struct {
